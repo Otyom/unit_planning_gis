@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0126)http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&name=ilce_alan&workspace=b -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./GeoServer_ Stil Editörü_files/jquery-1.12.4-ver-ADBA03E22274074BEE5842FCD9720FBD.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/wicket-event-jquery-ver-E34C6FE16C54FE3DF3591290A48A496A.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/wicket-ajax-jquery-ver-8222D62FFF24E724566C813AE5124575.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/modal-ver-059C31FF4BC3573A4DC1067D19055495.js.indir"></script>
+<link rel="stylesheet" type="text/css" href="./GeoServer_ Stil Editörü_files/modal-ver-6DD427F62536C71D033C76331801D153.css">
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&amp;name=ilce_alan&amp;workspace=b";
+/*]]>*/
+</script>
+<script type="text/javascript" id="org.apache.wicket.markup.html.form.Form">
+/*<![CDATA[*/
+if (typeof(Wicket)=='undefined') { Wicket={}; } if (typeof(Wicket.Forms)=='undefined') { Wicket.Forms={}; }
+/*]]>*/
+</script>
+<script type="text/javascript" id="org.apache.wicket.markup.html.form.Form.showhideForm.metadata">
+/*<![CDATA[*/
+Wicket.Forms["showhideForm"]={multipart:true};
+/*]]>*/
+</script>
+<link rel="stylesheet" type="text/css" href="./GeoServer_ Stil Editörü_files/codemirror-ver-1C26F7D1F30CBCC58982178F588906D5.css">
+<link rel="stylesheet" type="text/css" href="./GeoServer_ Stil Editörü_files/show-hint-ver-630E320A614E7732F6CE1BF37147F27F.css">
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/codemirror-ver-208A0F580565126F52E4DA2F1E567731.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/xml-ver-73D11E94CFA34960321EAC22DA6C2469.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/clike-ver-8AC8F9D2C8B1B7D5BDF55127BF9BD6C5.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/groovy-ver-F9DBB8F84A5CCC51C62F0808F2BFDBD9.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/javascript-ver-0063319742359F1DBD185B1863DC6482.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/python-ver-571837EAC052B283891A6FCEEBC071B6.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/ruby-ver-8D1A3B200B49E89EEBDE8167CD06E10C.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/css-ver-F0D077F093A198535AF705496114B909.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/show-hint-ver-D5A1E37177008AB50E7C744B2D0A3934.js.indir"></script>
+<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/geocss-hint-ver-12D3F0B8E89D3FC98E91E8007BB1040C.js.indir"></script>
+
+     <!-- Make the line numbers look good -->
+     <style type="text/css" id="org-geoserver-web-wicket-CodeMirrorEditor-0">
+/*<![CDATA[*/
+
+      .CodeMirror-line-numbers {
+        width: 2.2em;
+        color: #aaa;
+        background-color: #eee;
+        text-align: right;
+        padding-right: .3em;
+        font-size: 12px;
+        font-family: monospace;
+        padding-top: .4em;
+        line-height: normal;
+      }
+      
+      .fullscreen {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        margin: 0;
+        padding: 0;
+        background: inherit;
+      }
+      
+      .button-toolbar span {
+           height: 16px;
+           width: 16px;
+           margin: 2px;
+       }
+       
+      .button-toolbar a {
+           float: left;
+           margin: 0;
+           padding: 0;
+           background: none;
+           border: none;
+       }
+       a.separator {
+           /*border-right: 1px outset;
+           padding-right: 5px;*/
+           margin-right: 5px;
+       }
+       div.disabled .button-toolbar {
+         display: none !important;
+       }
+    
+/*]]>*/
+</style>
+    
+    
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+	
+	<title>GeoServer: Stil Editörü</title>
+    <link href="http://localhost:8080/geoserver/web/wicket/resource/org.geoserver.web.GeoServerBasePage/favicon-ver-CD7C91844A87FE589C62DFE238A2ACA7.ico" rel="shortcut icon">
+	
+      <link rel="stylesheet" href="./GeoServer_ Stil Editörü_files/screen-ver-5E7BA86A4C3BEA6B457AC3C7F9ADF9B4.css" type="text/css" media="screen, projection">
+      
+      
+      <link rel="stylesheet" href="./GeoServer_ Stil Editörü_files/print-ver-BBB913C92FDF844CBAD576E7BB0B2A96.css" type="text/css" media="print">
+      
+       
+	  <link rel="stylesheet" href="./GeoServer_ Stil Editörü_files/geoserver-ver-C15ED0AB793F8851D3EBB8CA12BA4967.css" type="text/css" media="screen, projection">
+	  
+      <!--[if IE]>
+      
+        <link rel="stylesheet" href="../resource/org.geoserver.web.GeoServerBasePage/css/blueprint/ie-ver-830652BCF971CCAF4FB29B4A140F9430.css" type="text/css" media="screen, projection"/>
+        
+      <![endif]-->
+      
+      <script type="text/javascript" src="./GeoServer_ Stil Editörü_files/jquery.placeholder-ver-6E6E735FF3A1792243C593D1E48D6AE1.js.indir"></script>
+      
+	<script type="text/javascript" src="./GeoServer_ Stil Editörü_files/mappreview_keyshortcut-ver-53DBA8B7B51005F654E624BEE0441D3B.js.indir"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-tabs~container-tabs-0-link&name=ilce_alan&workspace=b","m":"POST","c":"id142","f":"styleForm","mp":true,"sc":"context:tabs-container:tabs:0:link","i":"ajaxFeedback","e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-tabs~container-tabs-1-link&name=ilce_alan&workspace=b","m":"POST","c":"id143","f":"styleForm","mp":true,"sc":"context:tabs-container:tabs:1:link","i":"ajaxFeedback","e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-tabs~container-tabs-2-link&name=ilce_alan&workspace=b","m":"POST","c":"id144","f":"styleForm","mp":true,"sc":"context:tabs-container:tabs:2:link","i":"ajaxFeedback","e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-tabs~container-tabs-3-link&name=ilce_alan&workspace=b","m":"POST","c":"id145","f":"styleForm","mp":true,"sc":"context:tabs-container:tabs:3:link","i":"ajaxFeedback","e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-panel-legendPanel-externalGraphicContainer-showhide-show&name=ilce_alan&workspace=b","m":"POST","c":"id146","f":"showhideForm","mp":true,"sc":"context:panel:legendPanel:externalGraphicContainer:showhide:show","i":"ajaxFeedback","e":"click","pd":true});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-panel-templates&name=ilce_alan&workspace=b","m":"POST","c":"id147","i":"ajaxFeedback","e":"change"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-panel-existingStyles&name=ilce_alan&workspace=b","m":"POST","c":"id148","i":"ajaxFeedback","e":"change"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-panel-upload&name=ilce_alan&workspace=b","m":"POST","c":"id149","f":"styleForm","mp":true,"sc":"context:panel:upload","i":"ajaxFeedback","pre":[function(attrs){var val = attrs.event.view.document.gsEditors ? attrs.event.view.document.gsEditors.editor.getValue() : attrs.event.view.document.getElementById("editor").value; if(val != '' &&!confirm('Mevcut editör içeriğinin üzerine yazmak istediğinizden emin misiniz?')) return false;}],"e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-styleForm-context-panel-preview&name=ilce_alan&workspace=b","m":"POST","c":"id14a","f":"styleForm","mp":true,"sc":"context:panel:preview","i":"ajaxFeedback","bh":[function(attrs){if (document.gsEditors) { document.getElementById('editor').value = document.gsEditors.editor.getValue(); }}],"e":"click"});;
+var textarea = document.getElementById('editor');
+var editor = CodeMirror.fromTextArea(textarea, { 
+    mode: 'xml',
+    theme: 'default',
+    lineWrapping: true,
+    lineNumbers: true,
+    extraKeys: {"Ctrl-Space": "autocomplete"}
+});
+editor.getWrapperElement().style.fontSize = "12px"; 
+editor.refresh();
+if(!document.gsEditors) {
+    document.gsEditors = {};
+}
+document.gsEditors.editor = editor;
+document.getElementById('cm_undo').onclick = function() {
+    editor.execCommand('undo');
+};
+document.getElementById('cm_redo').onclick = function() {
+    editor.execCommand('redo')
+};
+document.getElementById('cm_goto').onclick = function() {
+    var line = Number(prompt("Jump to line:", "")) - 1;
+    var lastLine = editor.lineCount() - 1;
+    if (line && !isNaN(line)) {
+      if(line > lastLine) {
+          editor.setCursor({line: lastLine, ch: 0})
+      } else if(line < 0) {
+          editor.setCursor({line: 0, ch: 0});
+      } else {
+          editor.setCursor({line: line, ch: 0});
+      }
+    }
+    editor.focus();
+};
+document.getElementById('cm_font_size').onchange = function() {
+    var fontSize = document.getElementById('cm_font_size').value;
+    editor.getWrapperElement().style.fontSize = fontSize+"px"; 
+    editor.refresh();
+}
+document.getElementById('cm_reformat').onclick = function() {
+    var start, end, i;
+    if (editor.getSelection()) {
+        start = editor.getCursor(true).line;
+        end = editor.getCursor(false).line;
+    } else {
+        start = 0;
+        end = editor.lineCount();
+    }
+    for(i = start; i<end; i++) {
+        editor.indentLine(i);
+    }
+}
+// This comes from http://thereisamoduleforthat.com/content/making-div-fullscreen-and-restoring-it-its-original-position
+// Does not work so commented out
+/*
+document.getElementById('cm_fullscreen').onclick = function() {
+	div = $('#id14b');
+    if (!div.hasClass('fullscreen')) { // Going fullscreen:
+    	alert("Sigh, can't make this work at all...");
+      // Save current values.
+      editor.beforeFullscreen = {
+        parentElement: div.parent(),
+        index: div.parent().children().index(div),
+        x: $(window).scrollLeft(), y: $(window).scrollTop(),
+      };
+
+      // Set values needed to go fullscreen.
+      $('body').append(div).css('overflow', 'hidden');
+      div.addClass('fullscreen');
+      window.scroll(0,0);
+    } else { // Going back to normal:
+      // Restore saved values.
+      div.removeClass('fullscreen');
+      if (editor.beforeFullscreen.index >= editor.beforeFullscreen.parentElement.children().length) {
+    	  editor.beforeFullscreen.parentElement.append(div);
+      } else {
+    	  div.insertBefore(editor.beforeFullScreen.parentElement.children().get(editor.beforeFullscreen.index));
+      }
+      $('body').css('overflow', 'auto');
+      window.scroll(editor.beforeFullscreen.x, editor.beforeFullscreen.y);
+      editor.beforeFullScreen = null;
+    }
+  };
+*/
+;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-validate&name=ilce_alan&workspace=b","m":"POST","c":"id14c","f":"styleForm","mp":true,"sc":"validate","i":"ajaxFeedback","bh":[function(attrs){if (document.gsEditors) { document.getElementById('editor').value = document.gsEditors.editor.getValue(); }}],"e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-apply&name=ilce_alan&workspace=b","m":"POST","c":"id14d","f":"styleForm","mp":true,"sc":"apply","i":"ajaxFeedback","e":"click"});;
+Wicket.Ajax.ajax({"u":"./org.geoserver.wms.web.data.StyleEditPage?10-1.IBehaviorListener.0-submit&name=ilce_alan&workspace=b","m":"POST","c":"id14e","f":"styleForm","mp":true,"sc":"p::submit","i":"ajaxFeedback","e":"click"});;
+Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+;});
+/*]]>*/
+</script>
+</head>
+<body>
+  <div id="header">
+    <div class="wrap">
+      <h2><a class="pngfix" href="http://localhost:8080/geoserver/web/"><span>GeoServer 2.12.2</span></a></h2>
+      <div class="button-group selfclear">
+	      <span>
+	      	
+	      </span>
+	      
+	      <span class="username">Olarak bağlanıldı <span>admin</span>.</span>
+	      <span>
+	      	<form style="display: inline-block;" method="post" action="http://localhost:8080/geoserver/j_spring_security_logout">
+	      		<button class="positive icon" type="submit">
+	      			<div><img src="./GeoServer_ Stil Editörü_files/door-out-ver-AF08348C0718B2B414CF6C19D798234B.png" alt="Çıkış"><span>Çıkış</span></div>
+	      		</button>
+	      	</form>		      
+	      </span>
+      </div>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+    <div id="sidebar">
+      
+      <ul id="navigation">
+        <li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Hakkında &amp; Durum</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.StatusPage" title="Sunucu yapılandırma ve durum özeti">
+                <img src="./GeoServer_ Stil Editörü_files/server_error-ver-102A2CF17440C6924EFAD1B6540701CB.png" alt="Sunucu Durumu"><span>Sunucu Durumu</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.LogPage" title="GeoServer kayıt dosyası içeriğini göster">
+                <img src="./GeoServer_ Stil Editörü_files/page_white_text-ver-0DA66BDB013F9A9D12CE7219E642BC25.png" alt="GeoServer Kayıtları"><span>GeoServer Kayıtları</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.ContactPage" title="Bu sunucunun iletişim bilgilerini tanımlayınız">
+                <img src="./GeoServer_ Stil Editörü_files/vcard-ver-151823B90AD370105DB8FFDBAAABF39F.png" alt="İletişim bilgileri"><span>İletişim bilgileri</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage" title="Geoserver hakkında genel bilgiler">
+                <img src="./GeoServer_ Stil Editörü_files/help-ver-C3812C74BC524179F4CCF5D2DB7B3CBF.png" alt="GeoServer Hakkında"><span>GeoServer Hakkında</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wps.web.ProcessStatusPage" title="Çalışan ve son zamanlarda tamamlanan işlemleri listele ">
+                <img src="./GeoServer_ Stil Editörü_files/cog-ver-30A18063EF42B090194A7E936086960F.png" alt="İşlem durumu"><span>İşlem durumu</span>
+              </a>
+            </li>
+          </ul>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Veri</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage" title="GeoServer&#39;da tanımlanmış tüm katmanların listesi ve her biri için kullanılabilir formatların önizlemeleri">
+                <img src="./GeoServer_ Stil Editörü_files/map-ver-3085230CE03A9A93A074669E4C194432.png" alt="Katman Önizleme"><span>Katman Önizleme</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.data.workspace.WorkspacePage" title="GeoServer çalışma alanlarını yönet">
+                <img src="./GeoServer_ Stil Editörü_files/folder-ver-FBD3929A893B147AE0940D48D533E023.png" alt="Çalışma Alanı"><span>Çalışma Alanı</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.data.store.StorePage" title="GeoServer&#39;a veri sağlayan depoları yönet">
+                <img src="./GeoServer_ Stil Editörü_files/database-ver-D698A5E9A755A97B51E657256881BBDE.png" alt="Depolar"><span>Depolar</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.data.layer.LayerPage" title="GeoServer tarafından yayınlanan katmanları yönetin">
+                <img src="./GeoServer_ Stil Editörü_files/picture_empty-ver-7C42DAE5239115350CA4F2557CF0F015.png" alt="Katmanlar"><span>Katmanlar</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.data.layergroup.LayerGroupPage" title="Katman gruplarını tanımlayın ve yönetin">
+                <img src="./GeoServer_ Stil Editörü_files/layers-ver-A13DE972B638EC78F2A83894515FF4E7.png" alt="Katman Grupları"><span>Katman Grupları</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StylePage" title="Geoserver tarafından yayınlanan Stilleri yönetin">
+                <img src="./GeoServer_ Stil Editörü_files/palette-ver-184B77B5020909BED079C417E8F6BB9F.png" alt="Stiller"><span>Stiller</span>
+              </a>
+            </li>
+          </ul>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Servisler</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.wmts.WMTSAdminPage" title="Web Map Tile Service">
+                <img src="./GeoServer_ Stil Editörü_files/server_tile_map-ver-23B59D4EE5EADA27CD2BDE0F7B292392.png" alt="WMTS"><span>WMTS</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wcs.web.WCSAdminPage" title="Web Coverage Servisi">
+                <img src="./GeoServer_ Stil Editörü_files/server_raster-ver-24A0B07B2E1CE3A44AAB292B4AA5567B.png" alt="WCS"><span>WCS</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wfs.web.WFSAdminPage" title="Web Vektör Veri Servisi">
+                <img src="./GeoServer_ Stil Editörü_files/server_vector-ver-ABCFC9BDF3237F2799FED1B0E4679A21.png" alt="WFS"><span>WFS</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.WMSAdminPage" title="Web Harita Servisi">
+                <img src="./GeoServer_ Stil Editörü_files/server_map-ver-BD9F5588DF2CAD48A10C7D90BD6C9DE7.png" alt="WMS"><span>WMS</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wps.web.WPSAdminPage" title="Web Analiz Servisi">
+                <img src="./GeoServer_ Stil Editörü_files/server_gear-ver-D3E4E668C526960F9BBB166F1C758467.png" alt="WPS"><span>WPS</span>
+              </a>
+            </li>
+          </ul>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Ayarlar</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.GlobalSettingsPage" title="Tüm sunucuya uygulanan ayarlar.">
+                <img src="./GeoServer_ Stil Editörü_files/server-ver-B0B38DC2E3593F7363DE77ED20FD7897.png" alt="Genel"><span>Genel</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.JAIPage" title="Java Advanced Imaging ile ilgili ayarları yönetin.">
+                <img src="./GeoServer_ Stil Editörü_files/cog_photo-ver-717DE401B9156ECAC0DDE3752F8C5095.png" alt="JAI"><span>JAI</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.admin.CoverageAccessPage" title="Coverage Erişimi ile ilgili ayarları yönetin.">
+                <img src="./GeoServer_ Stil Editörü_files/cog_photo-ver-717DE401B9156ECAC0DDE3752F8C5095(1).png" alt="Coverage Erişimi"><span>Coverage Erişimi</span>
+              </a>
+            </li>
+          </ul>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Karelemeyi Ön Belleğe alma</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.layer.CachedLayersPage" title="Entegre GeoWebCache tarafından yayınlanan önbelleğe alınmış katmanları yönet">
+                <img src="./GeoServer_ Stil Editörü_files/tilelayer-ver-A4E41E9A105008CEA7F89E5529A5CC04.png" alt="Tile Katmanlar"><span>Tile Katmanlar</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.GWCSettingsPage" title="Gömülü GeoWebCache için genel ayarları yapılandırma">
+                <img src="./GeoServer_ Stil Editörü_files/geowebcache-16-ver-A2CC77BEC866639F3454064AE0E3AE2C.png" alt="Varsayılanları Önbelleğe Alma"><span>Varsayılanları Önbelleğe Alma</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.gridset.GridSetsPage" title="Mevcut gridsetleri yönet veya yeni bir tane oluştur">
+                <img src="./GeoServer_ Stil Editörü_files/gridset-ver-618E101D6EA16710A07144904F301F58.png" alt="Gridsetler"><span>Gridsetler</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.diskquota.DiskQuotaSettingsPage" title="Kareleme önbelleğe almak için disk kota sınırlarını ve son kullanma ilkesini yapılandır">
+                <img src="./GeoServer_ Stil Editörü_files/diskquota-ver-952051985214488BB370ECD21DB44C74.png" alt="Disk Kotası"><span>Disk Kotası</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.gwc.web.blob.BlobStoresPage" title="Configure different BlobStores for the embedded GeoWebCache.">
+                <img src="./GeoServer_ Stil Editörü_files/blobstores-ver-D698A5E9A755A97B51E657256881BBDE.png" alt="BlobStores"><span>BlobStores</span>
+              </a>
+            </li>
+          </ul>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-header">
+            <span>Güvenlik</span>
+          </div>
+          <ul class="navigation-tab-content plain">
+            <li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.SecuritySettingsPage" title="Genel güvenlik ayarlarını yapılandırın">
+                <img src="./GeoServer_ Stil Editörü_files/wrench-ver-A137EB4441860564CE1655357AF26DE8.png" alt="Ayarlar"><span>Ayarlar</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.auth.AuthenticationPage" title="Yetkilendirme sağlayıcıları ve ayarları">
+                <img src="./GeoServer_ Stil Editörü_files/shield-ver-807CDFB63D846A7E57F43CBDD59317CE.png" alt="Yetkilendirme"><span>Yetkilendirme</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.passwd.PasswordPage" title="Şifre ayarları">
+                <img src="./GeoServer_ Stil Editörü_files/lock-ver-B508411BB915ECF32B1A995644F67FD1.png" alt="Şifreler"><span>Şifreler</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.UserGroupRoleServicesPage" title="Kullanıcıları, grupları ve rolleri yönetin">
+                <img src="./GeoServer_ Stil Editörü_files/group-ver-3AFBBB77C13A366898F9088F7AE086A0.png" alt="Kullanıcılar, Gruplar, Roller"><span>Kullanıcılar, Gruplar, Roller</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.data.DataSecurityPage" title="Veri erişim kurallarını düzenleyin">
+                <img src="./GeoServer_ Stil Editörü_files/database_key-ver-B5213A0964C48368586607D76A55A83B.png" alt="Veri"><span>Veri</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.security.web.service.ServiceAccessRulePage" title="Servis erişim kurallarını düzenleyin">
+                <img src="./GeoServer_ Stil Editörü_files/shape_square_key-ver-48019BBC44223E249D1E0B48DD79E1FD.png" alt="Servisler"><span>Servisler</span>
+              </a>
+            </li><li class="nav-administer-service">
+              <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wps.web.WPSAccessRulePage" title="Web Processing Service security">
+                <img src="./GeoServer_ Stil Editörü_files/server_key-ver-D3E4E668C526960F9BBB166F1C758467.png" alt="WPS güvenliği"><span>WPS güvenliği</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation-tab">
+          <div class="navigation-tab-single">
+             <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.DemoPage" title="GeoServer Tanıtımları"><span>Demolar</span></a>
+          </div>
+        </li><li class="navigation-tab">
+          <div class="navigation-tab-single">
+             <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.ToolPage" title="GeoServer Araçları"><span>Araçlar</span></a>
+          </div>
+        </li>
+      </ul>
+      
+    </div><!-- /#sidebar -->
+    <div id="page" class="selfclear">
+      <div class="page-header">
+        <div id="feedback">
+  <ul class="feedbackPanel">
+    <li class="feedbackPanelINFO">
+      <span>No validation errors.</span>
+    </li>
+  </ul>
+</div>
+        <h1>Stil Editörü</h1>
+        <p>Mevcut SLD stilini düzenleyiniz. Editör, sözdizimini vurgulayabilir ve tam ekranda görüntüleyebilir. "Onayla" düğmesine tıklayarak stilin geçerli bir SLD dokümanı olduğunu doğrulayabilirsiniz.</p>
+        <div class="header-panel"></div>
+      </div>
+      <div class="page-pane selfclear">
+        
+    <form id="styleForm" method="post" action="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10-1.IFormSubmitListener-styleForm&amp;name=ilce_alan&amp;workspace=b" enctype="multipart/form-data" accept-charset="UTF-8" target=""><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="styleForm_hf_0" id="styleForm_hf_0"></div>
+        <div style="margin-bottom: 3em" id="id14f">
+<div class="tab-row tab-row-compact">
+<ul>
+	<li class="tab0 selected"><a href="javascript:;" id="id142"><span>Data</span></a></li><li class="tab1"><a href="javascript:;" id="id143"><span>Publishing</span></a></li><li class="tab2"><a href="javascript:;" id="id144"><span>Layer Preview</span></a></li><li class="tab3 last"><a href="javascript:;" id="id145"><span>Layer Attributes</span></a></li>
+</ul>
+</div>
+<div class="tab-panel">
+      <div class="selfclear clearBoth" style="padding-top: 2em;">
+          <fieldset class="leftwise" style="width: 45%; margin-right: 5%; margin-bottom: 0px">
+            <legend>
+              <span>Style Data</span>
+            </legend>
+            <ul>
+              <li>
+                <label for="name">İsim</label>
+                <input class="text" value="ilce_alan" name="context:panel:name">
+              </li>
+              <li>
+                <label for="workspace">Çalışma Alanı</label>
+                <select name="context:panel:workspace">
+<option value=""></option>
+<option selected="selected" value="WorkspaceInfoImpl--18f91859:189d57bcaef:-79d1">b</option>
+<option value="WorkspaceInfoImpl--18f91859:189d57bcaef:-79ed">c</option>
+<option value="WorkspaceInfoImpl-13be334b:189c660ec03:-7fff">gis</option>
+<option value="WorkspaceInfoImpl-40ca6ba6:18406533d24:-7ffd">Heatmap</option>
+</select>
+              </li>
+              <li>
+                <label for="format">Format</label>
+                <select name="context:panel:format" disabled="disabled" id="id150">
+<option selected="selected" value="sld">SLD</option>
+<option value="zip">ZIP</option>
+</select>
+                <div class="info-link" style="display: inline-block;">
+                  Sadece yeni stiller için düzenlenebilir formatlar
+                </div>
+              </li>
+            </ul>
+          <div style="padding-top: 2em"><fieldset style="margin-bottom: 0em">
+            <legend>
+              <span>Style Content</span>
+            </legend>
+            <ul>
+              <li>
+                <label for="name">Generate a default style</label>
+                <select name="context:panel:templates" id="id147">
+<option selected="selected" value="">Choose One</option>
+<option value="Point">Point</option>
+<option value="Line">Line</option>
+<option value="Polygon">Polygon</option>
+<option value="Raster">Raster</option>
+<option value="Generic">Generic</option>
+</select>
+                <a id="id151">Generate ...</a>
+              </li>
+              <li>
+                <label for="name">Mevcut stilden kopyalayın</label>
+                <select name="context:panel:existingStyles" id="id148">
+<option selected="selected" value="">Choose One</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7ff2">burg</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7ff0">capitals</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fdd">cite_lakes</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe6">dem</option>
+<option value="StyleInfoImpl-37b18cc6:14d5d036d48:-8000">generic</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7ff1">giant_polygon</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe1">grass</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fea">green</option>
+<option value="StyleInfoImpl--28b938c3:184068d3161:-7ff6">Heatmap:heatmap</option>
+<option value="StyleInfoImpl--18f91859:189d57bcaef:-79e7">c:il</option>
+<option value="StyleInfoImpl--18f91859:189d57bcaef:-79cf">b:ilce_alan</option>
+<option value="StyleInfoImpl--18f91859:189d57bcaef:-79eb">c:ilce_nokta</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe3">line</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fde">poi</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fdf">point</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7feb">poly_landmarks</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe0">polygon</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fee">pophatch</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe5">population</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe9">rain</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe2">raster</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fed">restricted</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fe8">simple_roads</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fef">simple_streams</option>
+<option value="StyleInfoImpl--570ae188:124761b8d78:-7fec">tiger_roads</option>
+</select>
+                <a id="id152">Kopyala ...</a>
+              </li>
+              <li>
+                <label for="filename">Stil dosyası</label>
+                <input type="file" name="context:panel:filename"> 
+                <a href="javascript:;" id="id149">Yükle ...</a>
+              </li>
+            </ul>
+          </fieldset></div>
+          </fieldset>
+          <fieldset class="rightwise" style="width: 45%; margin-right: 5%">
+            <legend>
+              <span>Legend</span>
+            </legend>
+            <ul>
+              <li>
+                <label for="legend">Legend</label>
+                <span id="id153">
+  <div id="id154">
+    <ul id="id155" style="display:none">
+      <li>
+        <label for="onlineResource">Online Resource</label>
+      </li>
+      <li>
+        <input type="text" class="text" value="" name="context:panel:legendPanel:externalGraphicContainer:list:onlineResource" id="id156"><br>
+        
+      </li>
+      <li><label for="width">Width</label></li>
+      <li><input type="text" class="text" value="0" name="context:panel:legendPanel:externalGraphicContainer:list:width" id="id157"></li>
+      <li><label for="height">Height</label></li>
+      <li><input type="text" class="text" value="0" name="context:panel:legendPanel:externalGraphicContainer:list:height" id="id158"></li>
+      <li><label for="format">Format</label></li>
+      <li><input type="text" class="text" value="" name="context:panel:legendPanel:externalGraphicContainer:list:format" id="id159"></li>      
+    </ul>
+    <div id="showhideForm">
+        <button name="context:panel:legendPanel:externalGraphicContainer:showhide:show" id="id146">Add legend</button>
+        
+    </div>
+  </div>  
+</span>
+              </li>
+              <li>
+                <a href="javascript:;" id="id14a">Lejant Önizleme</a>
+                <div id="id15a">
+                  
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+      </div>
+    </div>
+</div>
+        <fieldset>
+            <legend>
+              <span>Style Editor</span>
+            </legend>
+        <div class="field textarea" id="id15b">
+  <div style="background-color: white" id="id14b">
+    <div style="border-top: 1px solid black; padding-top: 3px">
+      
+        <div class="button-group button-toolbar selfclear">
+              <!--  Sigh, does not work... oh well, commenting out for the time being and hoping
+                    a good soul might help 
+              <a class="button-fullscreen icon separator" href="#" title="View fullscreen" id="cm_fullscreen">
+                <span></span>
+              </a>
+               -->
+              <a class="button-undo icon" href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&amp;name=ilce_alan&amp;workspace=b#" title="Undo" id="cm_undo">
+                <span></span>
+              </a>
+              <a class="button-redo icon separator" href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&amp;name=ilce_alan&amp;workspace=b#" title="Redo" id="cm_redo">
+                <span></span>
+              </a>
+              <a class="button-goto icon" href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&amp;name=ilce_alan&amp;workspace=b#" title="Go to line ..." id="cm_goto">
+                <span></span>
+              </a>
+              <a class="button-reformat icon separator" href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10&amp;name=ilce_alan&amp;workspace=b#" title="Reformat" id="cm_reformat">
+                <span></span>
+              </a>
+              <select style="margin:0; position: " id="cm_font_size">
+              <option value="8">8pt</option>
+              <option value="10">10pt</option>
+              <option value="12" selected="selected">12pt</option>
+              <option value="14">14pt</option>
+              <option value="16">16pt</option>
+              <option value="18">18pt</option>
+              <option value="20">20pt</option>
+            </select>
+            </div>
+      
+    </div>
+    <div style="border: 1px solid black;">
+      <textarea name="styleEditor:editorContainer:editorParent:editor" id="editor" style="display: none;">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"&gt;
+  &lt;!--Generated by GeoCat Bridge 4.3 (based on bridgestyle 0.1)--&gt;
+  &lt;NamedLayer&gt;
+    &lt;Name&gt;ilce_alan&lt;/Name&gt;
+    &lt;UserStyle&gt;
+      &lt;Title&gt;ebm_ilce_alan&lt;/Title&gt;
+      &lt;FeatureTypeStyle&gt;
+        &lt;Rule&gt;
+          &lt;Name&gt;0 - 1&lt;/Name&gt;
+          &lt;ogc:Filter&gt;
+            &lt;ogc:And&gt;
+              &lt;ogc:PropertyIsGreaterThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;0.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsGreaterThanOrEqualTo&gt;
+              &lt;ogc:PropertyIsLessThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;1.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsLessThanOrEqualTo&gt;
+            &lt;/ogc:And&gt;
+          &lt;/ogc:Filter&gt;
+          &lt;PolygonSymbolizer&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#FF4858&lt;/CssParameter&gt;
+              &lt;CssParameter name="fill-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            &lt;Stroke&gt;
+              &lt;CssParameter name="stroke"&gt;#232323&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-width"&gt;0.9285714285714285&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Stroke&gt;
+          &lt;/PolygonSymbolizer&gt;
+        &lt;/Rule&gt;
+        &lt;Rule&gt;
+          &lt;Name&gt;1 - 2.6&lt;/Name&gt;
+          &lt;ogc:Filter&gt;
+            &lt;ogc:And&gt;
+              &lt;ogc:PropertyIsGreaterThan&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;1.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsGreaterThan&gt;
+              &lt;ogc:PropertyIsLessThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;2.6&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsLessThanOrEqualTo&gt;
+            &lt;/ogc:And&gt;
+          &lt;/ogc:Filter&gt;
+          &lt;PolygonSymbolizer&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#1B7F79&lt;/CssParameter&gt;
+              &lt;CssParameter name="fill-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            &lt;Stroke&gt;
+              &lt;CssParameter name="stroke"&gt;#232323&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-width"&gt;0.9285714285714285&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Stroke&gt;
+          &lt;/PolygonSymbolizer&gt;
+        &lt;/Rule&gt;
+        &lt;Rule&gt;
+          &lt;Name&gt;2.6 - 8&lt;/Name&gt;
+          &lt;ogc:Filter&gt;
+            &lt;ogc:And&gt;
+              &lt;ogc:PropertyIsGreaterThan&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;2.6&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsGreaterThan&gt;
+              &lt;ogc:PropertyIsLessThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;8.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsLessThanOrEqualTo&gt;
+            &lt;/ogc:And&gt;
+          &lt;/ogc:Filter&gt;
+          &lt;PolygonSymbolizer&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#00CCC0&lt;/CssParameter&gt;
+              &lt;CssParameter name="fill-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            &lt;Stroke&gt;
+              &lt;CssParameter name="stroke"&gt;#232323&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-width"&gt;0.9285714285714285&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Stroke&gt;
+          &lt;/PolygonSymbolizer&gt;
+        &lt;/Rule&gt;
+        &lt;Rule&gt;
+          &lt;Name&gt;8 - 15.4&lt;/Name&gt;
+          &lt;ogc:Filter&gt;
+            &lt;ogc:And&gt;
+              &lt;ogc:PropertyIsGreaterThan&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;8.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsGreaterThan&gt;
+              &lt;ogc:PropertyIsLessThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;15.4&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsLessThanOrEqualTo&gt;
+            &lt;/ogc:And&gt;
+          &lt;/ogc:Filter&gt;
+          &lt;PolygonSymbolizer&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#72F2EB&lt;/CssParameter&gt;
+              &lt;CssParameter name="fill-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            &lt;Stroke&gt;
+              &lt;CssParameter name="stroke"&gt;#232323&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-width"&gt;0.9285714285714285&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Stroke&gt;
+          &lt;/PolygonSymbolizer&gt;
+        &lt;/Rule&gt;
+        &lt;Rule&gt;
+          &lt;Name&gt;15.4 - 177&lt;/Name&gt;
+          &lt;ogc:Filter&gt;
+            &lt;ogc:And&gt;
+              &lt;ogc:PropertyIsGreaterThan&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;15.4&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsGreaterThan&gt;
+              &lt;ogc:PropertyIsLessThanOrEqualTo&gt;
+                &lt;ogc:PropertyName&gt;b&lt;/ogc:PropertyName&gt;
+                &lt;ogc:Literal&gt;177.0&lt;/ogc:Literal&gt;
+              &lt;/ogc:PropertyIsLessThanOrEqualTo&gt;
+            &lt;/ogc:And&gt;
+          &lt;/ogc:Filter&gt;
+          &lt;PolygonSymbolizer&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#747F7F&lt;/CssParameter&gt;
+              &lt;CssParameter name="fill-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            &lt;Stroke&gt;
+              &lt;CssParameter name="stroke"&gt;#232323&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-width"&gt;0.9285714285714285&lt;/CssParameter&gt;
+              &lt;CssParameter name="stroke-opacity"&gt;1.0&lt;/CssParameter&gt;
+            &lt;/Stroke&gt;
+          &lt;/PolygonSymbolizer&gt;
+        &lt;/Rule&gt;
+        &lt;Rule&gt;
+        
+          &lt;TextSymbolizer&gt;
+
+            &lt;Geometry&gt;
+          &lt;ogc:Function name="centroid"&gt;
+            &lt;ogc:PropertyName&gt;geom&lt;/ogc:PropertyName&gt;
+          &lt;/ogc:Function&gt;
+        &lt;/Geometry&gt;
+            &lt;Label&gt;
+              &lt;ogc:PropertyName&gt;ILCEAD&lt;/ogc:PropertyName&gt;
+            &lt;/Label&gt;
+            &lt;Font&gt;
+              &lt;CssParameter name="font-family"&gt;Arial&lt;/CssParameter&gt;
+              &lt;CssParameter name="font-size"&gt;
+           &lt;ogc:Function name="Categorize"&gt;
+             &lt;ogc:Function name="env"&gt;
+               &lt;ogc:Literal&gt;wms_scale_denominator&lt;/ogc:Literal&gt;
+             &lt;/ogc:Function&gt;
+             &lt;ogc:Literal&gt;100&lt;/ogc:Literal&gt;
+            &lt;ogc:Literal&gt;300&lt;/ogc:Literal&gt;
+           &lt;ogc:Literal&gt;40&lt;/ogc:Literal&gt;
+            &lt;ogc:Literal&gt;2500&lt;/ogc:Literal&gt;
+            &lt;ogc:Literal&gt;15&lt;/ogc:Literal&gt;
+            &lt;ogc:Literal&gt;350000&lt;/ogc:Literal&gt;
+            &lt;ogc:Literal&gt;10&lt;/ogc:Literal&gt;
+             &lt;ogc:Literal&gt;3500000&lt;/ogc:Literal&gt;
+              &lt;ogc:Literal&gt;5&lt;/ogc:Literal&gt;
+          &lt;/ogc:Function&gt;    
+              &lt;/CssParameter&gt;
+              &lt;CssParameter name="font-style"&gt;bold&lt;/CssParameter&gt;
+            &lt;/Font&gt;
+            &lt;LabelPlacement&gt;
+              &lt;PointPlacement&gt;
+                &lt;AnchorPoint&gt;
+                  &lt;AnchorPointX&gt;0.5&lt;/AnchorPointX&gt;
+                  &lt;AnchorPointY&gt;0.5&lt;/AnchorPointY&gt;
+                &lt;/AnchorPoint&gt;
+                &lt;Displacement&gt;
+                  &lt;DisplacementX&gt;0.0&lt;/DisplacementX&gt;
+                  &lt;DisplacementY&gt;0.0&lt;/DisplacementY&gt;
+                &lt;/Displacement&gt;
+                &lt;Rotation&gt;0.0&lt;/Rotation&gt;
+              &lt;/PointPlacement&gt;
+            &lt;/LabelPlacement&gt;
+            &lt;Fill&gt;
+              &lt;CssParameter name="fill"&gt;#ffffff&lt;/CssParameter&gt;
+            &lt;/Fill&gt;
+            
+          &lt;/TextSymbolizer&gt;
+        &lt;/Rule&gt;
+      &lt;/FeatureTypeStyle&gt;
+    &lt;/UserStyle&gt;
+  &lt;/NamedLayer&gt;
+&lt;/StyledLayerDescriptor&gt;
+</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap" style="font-size: 12px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 184px; left: 250.775px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 2360px;"></div></div><div class="CodeMirror-hscrollbar" not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" not-content="true"></div><div class="CodeMirror-gutter-filler" not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -17px; border-right-width: 13px; min-height: 2360px; padding-right: 17px; padding-bottom: 0px;"><div style="position: relative; top: 1032px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 221.775px; top: 348px; height: 12px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">85</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">PolygonSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">86</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">87</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">88</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Name</span><span class="cm-tag cm-bracket">&gt;</span>8 - 15.4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Name</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">89</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Filter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">90</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:And</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">91</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyIsGreaterThan</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">92</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span>b<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">93</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span>8.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">94</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyIsGreaterThan</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">95</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyIsLessThanOrEqualTo</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">96</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span>b<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">97</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span>15.4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">98</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyIsLessThanOrEqualTo</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">99</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:And</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">100</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Filter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">101</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">PolygonSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">102</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Fill</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">103</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"fill"</span><span class="cm-tag cm-bracket">&gt;</span>#B1BF49<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">104</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"fill-opacity"</span><span class="cm-tag cm-bracket">&gt;</span>1.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">105</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Fill</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">106</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Stroke</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">107</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke"</span><span class="cm-tag cm-bracket">&gt;</span>#D96941<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">108</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke-width"</span><span class="cm-tag cm-bracket">&gt;</span>0.9285714285714285<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">109</div></div><pre><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke-opacity"</span><span class="cm-tag cm-bracket">&gt;</span>1.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">110</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Stroke</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">111</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">PolygonSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">112</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">113</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">114</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Name</span><span class="cm-tag cm-bracket">&gt;</span>15.4 - 177<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Name</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">115</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Filter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">116</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:And</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">117</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyIsGreaterThan</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">118</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span>b<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">119</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span>15.4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">120</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyIsGreaterThan</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">121</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyIsLessThanOrEqualTo</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">122</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span>b<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyName</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">123</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span>177.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Literal</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">124</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:PropertyIsLessThanOrEqualTo</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">125</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:And</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">126</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ogc:Filter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">127</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">PolygonSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">128</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Fill</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">129</div></div><pre><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"fill"</span><span class="cm-tag cm-bracket">&gt;</span>#D9D279<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">130</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"fill-opacity"</span><span class="cm-tag cm-bracket">&gt;</span>1.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">131</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Fill</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">132</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Stroke</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">133</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke"</span><span class="cm-tag cm-bracket">&gt;</span>#D96941<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">134</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke-width"</span><span class="cm-tag cm-bracket">&gt;</span>0.9285714285714285<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">135</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">CssParameter</span> <span class="cm-attribute">name</span>=<span class="cm-string">"stroke-opacity"</span><span class="cm-tag cm-bracket">&gt;</span>1.0<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">CssParameter</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">136</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Stroke</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">137</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">PolygonSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">138</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">139</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">Rule</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">140</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px; width: 29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">141</div></div><pre class=""><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">TextSymbolizer</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; top: 2360px;"></div><div class="CodeMirror-gutters" style="height: 2373px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div>
+    </div>
+  </div>
+</div>
+        </fieldset>
+        <div id="id15c" style="display:none">
+	
+</div>
+    </form>
+    <div class="button-group selfclear">
+       <a href="javascript:;" id="id14c">Doğrula</a>
+       <a href="javascript:;" id="id14d">Apply</a>
+       <a href="javascript:;" id="id14e">Gönder</a>
+       <a href="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?10-1.ILinkListener-cancel&amp;name=ilce_alan&amp;workspace=b">İptal</a>
+    </div>
+
+      </div>
+    </div><!-- /#page -->
+    </div><!-- /.wrap> -->
+  </div><!-- /#main -->
+  <div id="ajaxFeedback" style="display: none;" showincrementallycount="0">
+    <img alt="Loading..." src="./GeoServer_ Stil Editörü_files/ajax-loader-ver-A51C5608D01ACF32DF728F299767F82B.gif">
+  </div>
+
+
+</body></html>

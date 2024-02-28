@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- bootstrap css -->
+<link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    
+ <!--  leaflet css -->
+    <link
+     rel="stylesheet"
+     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      />
+
+<!-- Style css -->
+<link rel="stylesheet" href="./lib/css/style.css" />
+
+<!-- fontawesome -->
+<link 
+rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>GIS PORTAL</title>
+
+ </head>
+ <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 left-sidebar"></div>
+            <div class="col-md-9" id="map">
+            <div class="leaflet-control map-coordinate"></div>
+            <div class="leaflet-control legend"></div>
+            <div class="leaflet-control basic-functions">
+                <div
+                  class="default-view btns"
+                  data-toggle="tooltip"
+                  title="Default zoom level (Home)"
+                >
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="full-screen btns">
+                  <i
+                    class="fas fa-expand-arrows-alt"
+                    data-toggle="tooltip"
+                    title="View map on full screen"
+                  ></i>
+                </div>
+    
+                <div class="layer-info btns">
+                  <i
+                    class="fa-solid fa-info"
+                    data-toggle="tooltip"
+                    title="Info about layer"
+                  ></i>
+                </div>
+    
+                <div class="print-map btns">
+                  <i
+                    class="fas fa-print"
+                    data-toggle="tooltip"
+                    title="Print map"
+                  ></i>
+                </div>
+              </div>
+                    
+                  </div>
+                </div>
+ </body>
+</html>
+
+<!-- j query -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<!-- lefleat js -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  
+</script>
+
+<!-- lefleat browser print -->
+<script src="dist/leaflet.browser.print.min.js"></script>
+
+<!-- tilelayer betterwms -->
+<script src="./lib/js/L.TileLayer.BetterWMS.js"></script>
+
+
+<!-- ilce alan -->
+<script src="./lib/ilce.js"></script>
+
+
+<!-- main js files -->
+<script src="./lib/js/main.js"></script>
+<script src="./lib/js/layers.js"></script>
+<script src="./lib/js/leaflet-control.js"></script>
